@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Greeting from './components/Greeting.vue'
 </script>
 
 <template>
@@ -14,10 +15,11 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
+    <Greeting />
   </main>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -44,4 +46,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
