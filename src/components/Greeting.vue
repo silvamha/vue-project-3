@@ -1,15 +1,24 @@
 <template>
-<h1>{{ msg }}</h1>
+    <div>
+        <h2>{{ msg }}</h2>
+    </div>
+
 </template>
 
-<script setup>
-export default{
-    name:"Greeting",
-    data(){
+<script>
+export default {
+    name: "Greeting",
+    data() {
         return {
-            msg:"Hello World!"
+            msg: "Hello World!"
         }
     }
 }
 </script>
+
+<style scoped>
+h2{
+    color:red;
+}
+</style>
 
