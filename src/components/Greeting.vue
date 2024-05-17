@@ -1,15 +1,13 @@
 <template>
     <div>
-        <h2 v-if="age> 25">{{ msg }}</h2>
-        <p v-else>You must be 25 years or older to view this message.</p>
+        <h2 v-if="age > 25">{{ msg }}</h2>
+        <p v-else> You must be 25 years or older to view this message.</p>
     </div>
-
 </template>
-
-<script>
+    <script>
 export default {
     name: "Greeting",
-    props:["age"],
+    props: ["age"],
     data() {
         return {
             msg: "Hello World!"
@@ -18,8 +16,11 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-h2:hover {
-color: darken(#cc4444, 15%);
-}
-</style>
+    <style scoped lang="scss">
+    h2{
+        color: red;
+    }
+        h2:hover {
+            color: darken(#cc4444, 15%);
+        }
+    </style>

@@ -2,10 +2,9 @@
     <div>
           <h3>Hey!</h3>
     <p><strong>{{ age }}</strong></p>
-    <button type="button" @click="age++">Increase Age</button>
-    <button type="button" @click="age--">Decrease Age</button>
+
     <greeting :age="age"></greeting>
-    <user :age="age"></user>  
+    <user :age="age" @add-age="age++" @subtract-age="age--"></user>  
     </div>
 
 </template>
