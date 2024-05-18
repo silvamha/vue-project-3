@@ -3,8 +3,8 @@
           <h3>Hey!</h3>
     <p><strong>{{ age }}</strong></p>
 
-    <greeting :age="age"></greeting>
-    <user :age="age" @add-age="age++" @subtract-age="age--"></user>  
+    <greeting :firstName="firstName" :age="age"></greeting>
+    <user :firstName="firstName" :age="age" @add-age="age++" @subtract-age="age--"></user>  
     </div>
 
 </template>
@@ -22,7 +22,8 @@ export default {
     },
     data() {
         return {
-            age: 20
+            age: 20,
+            firstName: "John",
         }
     }
 }

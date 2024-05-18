@@ -3,6 +3,7 @@
     <button type="button" @click="onClickSubtractAge">Decrease Age</button>
     <p>The user is {{ age }} years old</p>
     <p>{{ ageDoubled }}</p>
+    <p>{{ firstName }} <strong>"From User Template"</strong></p>
 </template>
 
 <script>
@@ -13,6 +14,9 @@ export default {
             type:Number,
             required:true
         },
+        firstName:{
+            type:String,}
+        
         
     }, 
     emits:['add-age','subtract-age'],
