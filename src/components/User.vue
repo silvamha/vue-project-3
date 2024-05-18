@@ -12,7 +12,8 @@ export default {
         age:{
             type:Number,
             required:true
-        }
+        },
+        
     }, 
     emits:['add-age','subtract-age'],
         computed:{
