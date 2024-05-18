@@ -18,10 +18,8 @@ export default {
         firstName: {
             type: String,
         }
-
-
     },
-    emits: ['add-age', 'subtract-age', 'add-age-3'],
+    emits: ['add-age', 'subtract-age'],
     computed: {
         ageDoubled() {
             return this.age * 2
@@ -29,10 +27,7 @@ export default {
     },
     methods: {
         onClickAddAge() {
-            this.$emit('add-age')
-        },
-        onClickAddAge() {
-            this.$emit('add-age-3', 3)
+            this.$emit('add-age', 3)
         },
         onClickSubtractAge() { // Change the method name to onClickSubtractAge
             this.$emit('subtract-age', 3)
