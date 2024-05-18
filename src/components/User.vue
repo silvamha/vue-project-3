@@ -16,7 +16,7 @@ export default {
             required: true
         },
         firstName: {
-            type: String,
+            type: String
         }
     },
     emits: ['add-age', 'subtract-age'],
@@ -32,7 +32,7 @@ export default {
         onClickSubtractAge() { // Change the method name to onClickSubtractAge
             this.$emit('subtract-age', 3)
         }
-    }
+    },
 }
 </script>
 
