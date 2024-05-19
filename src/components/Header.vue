@@ -1,3 +1,7 @@
+/**
+ * @component Header
+ * @description This component represents the header section of the Vue project.
+ */
 <template>
     <div>
 
